@@ -1,3 +1,72 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "indent": ["error", 2],
+    "camelcase": "error",
+    "curly": "error",
+    "max-len": ["error", { "code": 100 }],
+    "arrow-parens": ["error", "always"],
+    "prefer-arrow-callback": ["error", { "allowUnboundThis": false }],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": ["variableLike"],
+        "format": ["camelCase"]
+      },
+      {
+        "selector": ["function"],
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "variable",
+        "types": ["boolean"],
+        "format": ["camelCase"],
+        "prefix": ["is", "has", "should", "can", "did"],
+        "filter": {
+          "regex": "^(is|has|should|can|did)[A-Z].*$",
+          "match": false
+        }
+      },
+      {
+        "selector": ["typeLike"],
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "enumMember",
+        "format": ["UPPER_CASE"]
+      },
+      {
+        "selector": ["classMethod"],
+        "modifiers": ["public"],
+        "format": ["camelCase"]
+      },
+      {
+        "selector": ["memberLike"],
+        "modifiers": ["private"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "require"
+      },
+      {
+        "selector": ["memberLike"],
+        "modifiers": ["protected"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "require"
+      }
+    ]
+  }
 }
