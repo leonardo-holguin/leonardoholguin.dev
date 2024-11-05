@@ -13,6 +13,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang='en'>
+      <link rel="canonical" href="https://www.leonardoholguin.dev" />
       <body>
         {children}
       </body>
