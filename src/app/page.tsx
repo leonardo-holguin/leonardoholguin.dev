@@ -1,6 +1,18 @@
+'use client';
+
 import Image from 'next/image';
+import React from 'react';
 
 export default function Home(): JSX.Element {
+  const getEmailAddress = (): void => {
+    grecaptcha.ready(() => {
+      grecaptcha
+        .execute('6LdGg6QqAAAAANqZ499XllUpeymCqesPrW9nX4RW', { action: 'submit' })
+        .then((token: string) => {
+          console.log(token);
+        });
+    });
+  };
   return (
     <div
       className='
@@ -11,7 +23,10 @@ export default function Home(): JSX.Element {
       <main className='flex flex-col gap-3 row-start-2'>
         <p>Leonardo Holguin Arias</p>
         <div className='w-full flex justify-center'>
-          <a className='mx-1' href='https://github.com/leonardo-holguin' target="_blank">
+          <a
+            className='mx-1'
+            href='https://github.com/leonardo-holguin'
+            target='_blank'>
             <Image
               className='dark:invert'
               src='/github-icon.svg'
@@ -21,7 +36,10 @@ export default function Home(): JSX.Element {
               priority
             />
           </a>
-          <a className='mx-1' href='https://www.linkedin.com/in/leoholguinarias/' target="_blank">
+          <a
+            className='mx-1'
+            href='https://www.linkedin.com/in/leoholguinarias/'
+            target='_blank'>
             <Image
               className='dark:invert'
               src='/linkedin-icon.svg'
@@ -31,6 +49,15 @@ export default function Home(): JSX.Element {
               priority
             />
           </a>
+          <Image
+            onClick={getEmailAddress}
+            className='dark:invert mx-1 cursor-pointer'
+            src='/email-icon.svg'
+            alt='Email Icon'
+            width={30}
+            height={30}
+            priority
+          />
         </div>
       </main>
     </div>

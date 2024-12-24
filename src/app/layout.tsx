@@ -13,10 +13,11 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang='en'>
-      <link rel="canonical" href="https://www.leonardoholguin.dev" />
-      <body>
-        {children}
-      </body>
+      <link rel='canonical' href='https://www.leonardoholguin.dev' />
+      <script
+        src='https://www.google.com/recaptcha/api.js?render=6LdGg6QqAAAAANqZ499XllUpeymCqesPrW9nX4RW'
+        async></script>
+      <body>{children}</body>
     </html>
   );
 }
