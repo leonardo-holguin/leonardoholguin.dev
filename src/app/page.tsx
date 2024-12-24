@@ -5,13 +5,7 @@ import React from 'react';
 
 export default function Home(): JSX.Element {
   const getEmailAddress = (): void => {
-    grecaptcha.ready(() => {
-      grecaptcha
-        .execute('6LdGg6QqAAAAANqZ499XllUpeymCqesPrW9nX4RW', { action: 'submit' })
-        .then((token: string) => {
-          console.log(token);
-        });
-    });
+    console.log('Hi!');
   };
   return (
     <div
