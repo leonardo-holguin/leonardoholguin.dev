@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /_next/
-Sitemap: https://www.leonardoholguin.dev/sitemap.xml
