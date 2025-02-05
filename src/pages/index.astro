@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import githubIcon from "../assets/github-icon.svg";
-import linkedinIcon from "../assets/linkedin-icon.svg";
-import emailIcon from "../assets/email-icon.svg";
+import githubIcon from "../assets/icons/github-icon.svg";
+import linkedinIcon from "../assets/icons/linkedin-icon.svg";
+import emailIcon from "../assets/icons/email-icon.svg";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -10,18 +10,54 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Leonardo Holguin Arias | Developer">
-  <div class="flex flex-col gap-3 row-start-2 items-center justify-center min-h-screen">
-    <div>
-			<p>Leonardo Holguin Arias</p>
-		</div>
-    <div class="w-full flex justify-center">
-			<a class="mx-1" href="https://github.com/leonardo-holguin" target="_blank">
-        <Image src={githubIcon} alt="GitHub Icon" width="30" height="30" />
-      </a>
-      <a class="mx-1" href="https://www.linkedin.com/in/leoholguinarias" target="_blank">
-        <Image src={linkedinIcon} alt="Linkedin Icon" width="30" height="30" />
-      </a>
-			<Image class="cursor-pointer mx-1" src={emailIcon} alt="Email Icon" width="30" height="30" />
+  <div
+    class="flex flex-col gap-3 row-start-2 items-center justify-center min-h-screen"
+  >
+    <div class="px-10 py-4 rounded-tr-3xl bg-linear-to-br from-gray-900 to-gray-950 text-white">
+      <div class="mb-2">
+        <p>Leonardo Holguin Arias</p>
+      </div>
+      <div class="w-full flex justify-center">
+        <a
+          class="mx-1"
+          href="https://github.com/leonardo-holguin"
+          target="_blank"
+        >
+          <Image
+            src={githubIcon}
+            alt="GitHub Icon"
+            width="30"
+            height="30"
+            decoding="async"
+            loading="lazy"
+            class="dark:invert"
+          />
+        </a>
+        <a
+          class="mx-1"
+          href="https://www.linkedin.com/in/leoholguinarias"
+          target="_blank"
+        >
+          <Image
+            src={linkedinIcon}
+            alt="Linkedin Icon"
+            width="30"
+            height="30"
+            decoding="async"
+            loading="lazy"
+            class="dark:invert"
+          />
+        </a>
+        <Image
+          class="cursor-pointer mx-1 dark:invert"
+          src={emailIcon}
+          alt="Email Icon"
+          width="30"
+          height="30"
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
     </div>
   </div>
 </Layout>
