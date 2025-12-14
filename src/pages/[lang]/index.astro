@@ -1,0 +1,16 @@
+---
+import Welcome from '../../components/Welcome.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getLangStaticPaths } from '../../lib/getStaticPaths';
+import { getTranslations } from '../../lib/useTranslations';
+
+const { lang } = Astro.params;
+const t = getTranslations(lang);
+
+export async function getStaticPaths() {
+  return getLangStaticPaths();
+}
+---
+<Layout title={t.index.title} lang={lang}>
+    <Welcome />
+</Layout>

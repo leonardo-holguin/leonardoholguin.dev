@@ -1,15 +1,14 @@
 // @ts-check
-import { defineConfig, envField } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  i18n: {
+    locales: ["es", "en", "fr"],
+    defaultLocale: "en",
+  },
   vite: {
     plugins: [tailwindcss()],
-  },
-  env: {
-    schema: {
-      PERSONAL_EMAIL: envField.string({ context: "server", access: "public" }),
-    }
   }
 });

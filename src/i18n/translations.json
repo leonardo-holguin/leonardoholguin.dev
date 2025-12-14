@@ -1,0 +1,47 @@
+{
+  "en": {
+    "common": {
+      "header": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "experience": "Experience",
+        "contact": "Contact"
+      }
+    },
+    "index": {
+      "title": "Hello, I am Leonardo Holguin | Full Stack Web Developer"
+    }
+  },
+  "es": {
+    "common": {
+      "header": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "experience": "Experiencia",
+        "contact": "Contacto"
+      }
+    },
+    "index": {
+      "title": "Hola, me llamo Leonardo Holguin | Desarrollador Web Full Stack"
+    }
+  },
+  "fr": {
+    "common": {
+      "header": {
+        "home": "Accueil",
+        "about": "À propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "experience": "Expérience",
+        "contact": "Contact"
+      }
+    },
+    "index": {
+      "title": "Bonjour, je suis Leonardo Holguin | Développeur Web Full Stack"
+    }
+  }
+}
