@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">       
+
+    <url>
+        <loc>https://www.leonardoholguin.dev/</loc>
+        <lastmod>2025-12-14T04:00:18+00:00</lastmod>
+    </url>
+
+    <!-- English -->
+    <url>
+        <loc>https://www.leonardoholguin.dev/en/</loc>
+        <priority>1.0</priority>
+        <lastmod>2025-12-14T04:00:18+00:00</lastmod>
+    </url>
+
+    <!-- Español -->
+    <url>
+        <loc>https://www.leonardoholguin.dev/es/</loc>
+        <priority>1.0</priority>
+        <lastmod>2025-12-14T04:00:18+00:00</lastmod>
+    </url>
+    
+    <!-- Français -->
+    <url>
+        <loc>https://www.leonardoholguin.dev/fr/</loc>
+        <priority>1.0</priority>
+        <lastmod>2025-12-14T04:00:18+00:00</lastmod>
+    </url>
+</urlset>

@@ -3,19 +3,13 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      // Idiomas soportados
       const supportedLocales = ['en', 'es', 'fr'];
-
-      // Detectar idioma del navegador
       const browserLang = navigator.language.slice(0, 2).toLowerCase();
-
-      // Si está soportado, redirigir a ese idioma, si no, usar 'en'
       const targetLang = supportedLocales.includes(browserLang) ? browserLang : 'en';
-
-      window.location.replace(`/${targetLang}/`);
+      window.location.replace(`/${targetLang}`);
     </script>
   </head>
   <body>
-    <p>Detectando idioma y redirigiendo...</p>
+    <p>Detecting language and redirecting...</p>
   </body>
 </html>
